@@ -1,4 +1,5 @@
-Add as a first buildpack in the chain. Set `PROJECT_PATH` environment variable to point to project root. It will be promoted to slug's root, everything else will be erased. Following buildpack (e.g. nodejs) will finish slug compilation.
+# Heroku subdir buildpack
+The key motivation behind using this buildpack is to have different deployable heroku applications into a single git repository. Add as a first buildpack in the chain. Set `PROJECT_PATH` environment variable to point to project root. It will be promoted to slug's root, everything else will be erased. Following buildpack (e.g. nodejs) will finish slug compilation.
 
 **Disclaimer:** This was originally forked from this repo: https://github.com/timanovsky/subdir-heroku-buildpack
 
